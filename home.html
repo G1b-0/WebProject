@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food for Fools</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #f1c40f;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+h1 {
+margin: 0;
+font-size: 24px;
+}
+#search-bar {
+width: 50%;
+}
+#categories {
+list-style-type: none;
+display: flex;
+padding: 0;
+}
+#categories li {
+padding: 10px;
+cursor: pointer;
+}
+#recipes {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 20px;
+}
+.recipe-card {
+width: 300px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin: 10px;
+padding: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.recipe-card img {
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+}
+.recipe-card h3 {
+margin: 10px 0;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Food for Fools</h1>
+<input type="text" id="search-bar" placeholder="Search for recipes...">
+</header>
+
+<nav>
+  <ul id="categories">
+    <li>Appetizers</li>
+    <li>Main Courses</li>
+    <li>Desserts</li>
+    <li>Drinks</li>
+  </ul>
+  <a href="about.html">About</a>
+</nav>
+
+<div id="recipes">
+<div class="recipe-card">
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsmittenkitchen.com%2F2020%2F03%2Fultimate-banana-bread%2F&psig=AOvVaw1QDFhhN_qx_0btJ46jVRjR&ust=1679147935896000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCKi7rNOP4_0CFQAAAAAdAAAAABAJ" alt="Recipe 1">
+<h3>Recipe 1</h3>
+<p>A delicious and easy-to-make recipe perfect for any occasion.</p>
+</div>
+<div class="recipe-card">
+<img src="https://example.com/recipe2.jpg" alt="Recipe 2">
+<h3>Recipe 2</h3>
+<p>This tasty recipe will leave you craving more. Try it today!</p>
+</div>
+<div class="recipe-card">
+<img src="https://example.com/recipe3.jpg" alt="Recipe 3">
+<h3>Recipe 3</h3>
+<p>Indulge in this delightful recipe that's both satisfying and simple to prepare.</p>
+</div>
+</div>
+
+<script>
+document.getElementById('search-bar').addEventListener('keyup', function(event) {
+if (event.key === 'Enter') {
+alert('Searching for: ' + this.value);
+}
+});
+
+var categories = document.getElementById('categories').getElementsByTagName('li');
+for (var i = 0; i < categories.length; i++) {
+  categories[i].addEventListener('click', function() {
+      alert('Selected category: ' + this.textContent);
+    });
+  }
+</script>
+</body>
+</html>

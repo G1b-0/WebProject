@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food for Fools</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://example.com/background.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    header {
+      background-color: rgba(241, 196, 15, 0.8);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #2c3e50;
+    }
+    #search-bar {
+      width: 50%;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Food for Fools</h1>
+  <input type="text" id="search-bar" placeholder="Search for recipes...">
+</header>
+
+<style>
+  #categories {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  #categories li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  #categories li:hover {
+    background-color: #34495e;
+  }
+  #recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+  .recipe-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ecf0f1;
+  }
+  .recipe-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .recipe-card h3 {
+    margin: 10px 0;
+  }
+</style>
+
+<!-- Add this after the header -->
+<nav>
+  <ul id="categories">
+    <li>Appetizers</li>
+    <li>Main Courses</li>
+    <li>Desserts</li>
+    <li>Drinks</li>
+    <li><a href="about.html" style="color: #ecf0f1; text-decoration: none;">About</a></li>
+  </ul>
+</nav>
+
+<div id="recipes">
+  <div class="recipe-card">
+    <img src="https://example.com/banana-bread.jpg" alt="Banana Bread">
+    <h3>Banana Bread</h3>
+    <p>A delicious and moist banana bread recipe that is perfect for breakfast or dessert.</p>
+  </div>
+  <div class="recipe-card">
+    <img src="https://example.com/french-toast.jpg" alt="French Toast">
+    <h3>French Toast</h3>
+    <p>Indulge in this classic breakfast dish with a sweet twist. Perfect for a weekend treat!</p>
+  </div>
+  <div class="recipe-card">
+    <img src="https://example.com/chicken-wings.jpg" alt="Chicken Wings">
+    <h3>Chicken Wings</h3>
+    <p>These flavorful and crispy chicken wings are the perfect appetizer for any occasion.</p>
+  </div>
+</div>
+
+</body>
+</html>
